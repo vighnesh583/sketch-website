@@ -135,7 +135,8 @@ const Gallery = () => {
           <div className="cta-content fade-in-up">
             <h2>Love What You See?</h2>
             <p>Commission your own personalized sketch today</p>
-            <a href="/commission" className="btn btn-primary">Start Your Commission</a>
+            <Link to="/commission" className="btn btn-primary">Start your Commission</Link>
+            
           </div>
         </section>
       </div>
