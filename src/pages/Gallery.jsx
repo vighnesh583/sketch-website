@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
   const [filter, setFilter] = useState('all');
