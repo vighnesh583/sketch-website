@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import 'remixicon/fonts/remixicon.css';
+
 
 const Footer = () => {
   return (
@@ -9,9 +11,10 @@ const Footer = () => {
             <h3>SketchArt</h3>
             <p>Creating beautiful, personalized sketches that capture your most precious moments.</p>
             <div className="social-links">
-              <a href="#" aria-label="Instagram">📷</a>
-              <a href="#" aria-label="Facebook">📘</a>
-              <a href="#" aria-label="Twitter">🐦</a>
+            
+              <a href="#" aria-label="Instagram"><i className="ri-instagram-line"></i></a>
+              <a href="#" aria-label="Facebook"><i className="ri-facebook-circle-line"></i></a>
+              <a href="#" aria-label="Twitter"><i className="ri-youtube-line"></i></a>
               <a href="#" aria-label="Email">✉️</a>
             </div>
           </div>

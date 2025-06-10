@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 const Services = () => {
   const services = [
     {
@@ -34,8 +34,9 @@ const Services = () => {
       title: "Wedding Sketch",
       description: "Romantic wedding moments preserved in artistic detail",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      basePrice: "₹2,000",
+      basePrice: "₹2,000(per-person)",
       features: [
+        
         "Intricate wedding scene details",
         "Multiple subjects",
         "Elegant composition",
@@ -50,7 +51,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
       basePrice: "₹2,500",
       features: [
-        "3-6 family members",
+        "3-4 family members",
         "Custom arrangement",
         "Large format options",
         "Heirloom quality"
@@ -148,7 +149,7 @@ const Services = () => {
                     <li key={idx}>✓ {feature}</li>
                   ))}
                 </ul>
-                <a href="/commission" className="btn btn-primary">Order Now</a>
+                <Link to="/commission" className="btn btn-primary">Order Now</Link>
               </div>
             </div>
           ))}
@@ -157,7 +158,7 @@ const Services = () => {
         {/* Size Options */}
         <section className="size-section section">
           <div className="text-center fade-in-up">
-            <h2>Size Options</h2>
+            <h2 style={{ fontSize: '40px', color: ' #764ba2' }}>Size Options</h2>
             <p>Choose the perfect size for your artwork</p>
           </div>
           <div className="size-options">
@@ -177,7 +178,7 @@ const Services = () => {
         {/* Add-ons */}
         <section className="addons-section section">
           <div className="text-center fade-in-up">
-            <h2>Additional Services</h2>
+            <h1 style={{ fontSize: '40px', color: '#FF0000' }}>Additional Services</h1>
             <p>Enhance your artwork with our premium add-ons</p>
           </div>
           <div className="addons-grid">
@@ -243,8 +244,8 @@ const Services = () => {
         <section className="cta-section">
           <div className="cta-content fade-in-up">
             <h2>Ready to Get Started?</h2>
-            <p>Commission your personalized sketch today and create lasting memories</p>
-            <a href="/commission" className="btn btn-primary">Start Your Order</a>
+            <p style={{color: 'white'}}>Commission your personalized sketch today and create lasting memories</p>
+            <Link to="/commission" className="btn btn-primary">Start Order Now</Link>
           </div>
         </section>
       </div>

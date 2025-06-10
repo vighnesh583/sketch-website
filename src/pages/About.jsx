@@ -1,10 +1,10 @@
-
+import { Link } from 'react-router-dom';
 const About = () => {
   const skills = [
     { name: "Charcoal Drawing", level: 95 },
     { name: "Pencil Sketching", level: 90 },
     { name: "Portrait Art", level: 98 },
-    { name: "Digital Art", level: 85 }
+    // { name: "Digital Art", level: 85 }
   ];
 
   const tools = [
@@ -12,8 +12,8 @@ const About = () => {
     { name: "Charcoal Sticks", icon: "🖌️" },
     { name: "Blending Stumps", icon: "🎨" },
     { name: "Quality Paper", icon: "📄" },
-    { name: "Digital Tablet", icon: "💻" },
-    { name: "Professional Scanner", icon: "🖨️" }
+    // { name: "Digital Tablet", icon: "💻" },
+    // { name: "Professional Scanner", icon: "🖨️" }
   ];
 
   const achievements = [
@@ -54,7 +54,13 @@ const About = () => {
         {/* Skills Section */}
         <section className="skills-section section">
           <div className="text-center fade-in-up">
-            <h2>My Skills</h2>
+            <h2 style={{  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    color: 'transparent',
+    fontSize: '40px',
+    fontWeight: 'bold'}}>My Skills</h2>
             <p>Mastery through years of dedication and continuous learning</p>
           </div>
           <div className="skills-grid">
